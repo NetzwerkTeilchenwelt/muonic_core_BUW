@@ -1,0 +1,9 @@
+#!/usr/bin/env sh
+
+tty_line=$(dmesg | grep cp210x | grep "now attached to" | tail -n 1)
+
+for word in $tty_line; do
+    tty=$word
+done
+
+echo $tty
