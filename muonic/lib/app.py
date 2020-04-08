@@ -49,7 +49,6 @@ class App(object):
 
         self._settings = App._default_settings
         self.running = False
-
         self.logger.debug('Got options: %s' % options)
 
         # import daq provider
@@ -373,5 +372,5 @@ class App(object):
                     #self.is_widget_active("decay") or
                     #self.is_widget_active("velocity")):
                 self.pulses = self.pulse_extractor.extract(msg)
-            
+
             """

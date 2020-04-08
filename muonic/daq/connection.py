@@ -57,9 +57,10 @@ class BaseDAQConnection(with_metaclass(abc.ABCMeta, object)):
         serial_port = None
 
         def get_dev_path(script):
-            tty = subprocess.Popen(
-                    [script], stdout=subprocess.PIPE).communicate()[0]
-            return "/dev/%s" % tty.rstrip('\n')
+            tty = subprocess.Popen([script], stdout=subprocess.PIPE).communicate()[0]
+            print(type(tty))
+            path = tty.decode('ASCII').rstrip("\n")
+            return f"/dev/{path}"
 
         while not connected:
             try:

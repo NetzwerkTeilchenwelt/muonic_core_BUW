@@ -114,7 +114,7 @@ def main():
             raise ImportError("muonic_gui optional dependency missing")
 
         try:
-            from PyQt4.QtGui import QApplication
+            from PyQt5.QtWidgets import QApplication
         except:
             raise ImportError("Qt4 optional dependency missing")
 
@@ -125,8 +125,8 @@ def main():
                           consumers=consumers)
 
         app.showMaximized()
-
         root.exec()
+        #root.exec()
 
         # gui_consumer = GuiConsumer(logger=logger)
         # consumers.append(gui_consumer)
