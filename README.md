@@ -53,7 +53,7 @@ Add-ons extend the number of available presentations.
 
 Just run `docker build -t muonic .`.
 
-## Running on Mac
+## Running on Mac and/or Docker
 
 Basically follow this link to setup a GUI on macOS (https://cntnr.io/running-guis-with-docker-on-mac-os-x-a14df6a76efc)[https://cntnr.io/running-guis-with-docker-on-mac-os-x-a14df6a76efc]. The steps are listed below
 
