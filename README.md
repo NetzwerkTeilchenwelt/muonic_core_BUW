@@ -62,7 +62,7 @@ Basically follow this link to setup a GUI on macOS (https://cntnr.io/running-gui
 - `brew install socat xquartz`
 - Open XQuartz and in settings open the advances tab. Here allow connections from network clients.
 - `socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"\$DISPLAY\"``
-  Run the GUI with your IP:
+- Run the GUI with your IP:
 - `docker run -e DISPLAY=<YOUR_IP>:0 -v /dev:/dev --privileged -it muonic muonic -G`
 
 ## Representation of the pulses:
